@@ -12,6 +12,9 @@
                 font-weight:500;
                 transition:0.2s;
             }
+            ul{
+                list-style:none;
+            }
         </style>
     </head>
     <body style="background-color: #f8f5e4;">
@@ -29,8 +32,19 @@
                     目次
                 </div>
                 <div class="card-body d-flex flex-column justify-content-between align-items-center" style="background-color:#fdfcf7;">
-                    <div><a href="./introduce.html">日本橋の紹介</a></div>
-                    <div><a href="./history.html">日本橋の歴史</a></div>
+                    <div>
+                        <span><a href="./introduce.html">日本橋の紹介</a></span>
+                        <button class="btn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#spotorgourmets" aria-expanded="false" aria-controls="spotorgourmets">
+                            V
+                        </button>
+                    </div>
+                    <div class="collapse" id="spotorgourmets">
+                        <ul class="list-unstyled d-flex flex-column h-100">
+                            <li class="d-flex flex-fill align-items-center justify-content-center" href="spot.html">スポット</li>
+                            <li class="d-flex flex-fill align-items-center justify-content-center" href="gourmet.html">グルメ</li>
+                        </ul>
+                    </div>
+                    <div><a href="./history.html">日本橋の歴史</a></div>   
                     <div><a href="./trivia.html">日本橋豆知識</a></div>
                     <div><a href="./event.html">日本橋のイベント・祭り</a></div>
                 </div>
